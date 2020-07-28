@@ -8,6 +8,8 @@
   }
 
   body { 
+    width: 100%;
+    overflow-x: hidden; 
     margin: 0;
     font-family: SF Pro Display;
     font-size: 16px;
@@ -145,35 +147,34 @@
   .about-column-left {
     float: left;
     width: 50%;
-    padding-top: 70px;
-    padding-left: 25%;
-    padding-right: 5%;
-    align-items: right;
+    padding-top: 3%;
+    padding-left: 9%; 
+
   }
 
   .about-column-right {
     float: left;
     width: 50%;
-    padding-left: 5%;
-    padding-right: 10%; 
+    padding-right: 4%; 
     text-align: left;
   }
   
   /* Clear floats after the columns */
-  .row:after {
+  .row::after {
     content: "";
     display: table;
     clear: both;
   }
 
   /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 800px) {
     .about-column-left {
       width: 100%;
     }
 
     .about-column-right {
         width: 100%;
+        padding-left: 5%;
       }
   }
 
@@ -227,18 +228,6 @@
       position: relative;
   }
 
-  .projects h2:after {
-    content: ''; 
-    position: absolute;
-    width: 80px;
-    height: 2px;
-    margin-left: -40px;
-    left: 50%;
-    bottom: 0px;
-    display: block;
-    clear: both;
-  }
-
   .projects p {
       padding-top: 0px;
       padding-bottom: 20px;
@@ -271,6 +260,35 @@
     opacity: 0.7;
 }
 
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .projects p {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .projects-column-left {
+    width: 20%; /* Let's assume you want 5 pictures in a row, so 100%/5 = 20% */
+    float: left;
+    padding: 10px;
+  }
+
+  .projects-column-center {
+    width: 3%; /* Let's assume you want 5 pictures in a row, so 100%/5 = 20% */
+    float: left;
+    padding: 10px;
+  }
+
+  .projects-column-right {
+    width: 33.33%; /* Let's assume you want 5 pictures in a row, so 100%/5 = 20% */
+    float: left;
+    padding: 10px;
+    }
+}
+
+/* News */
+
 .news {
     padding-top: 50px;
     background-color: white;
@@ -282,11 +300,31 @@
     font-weight: 400;
 }
 
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 800px) {
+    .news p {
+      width: 100%;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
+
+/* Quotes */
+
 .quotes {
     padding-top: 50px;
     background-color: #fff4ca;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .quotes p {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
 
 /* Footer Style */
