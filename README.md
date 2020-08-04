@@ -1,2 +1,3 @@
-# dishsrivastava.github.io
-Dishasrivastava.com 
+# Personal Website: dishsrivastava.github.io
+
+Link: Dishasrivastava.com 
