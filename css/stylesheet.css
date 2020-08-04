@@ -339,6 +339,12 @@ a {
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
 }
+@media only screen and (max-width: 800px) {
+  a {
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+}
 
 img {
   max-width: 100%;
